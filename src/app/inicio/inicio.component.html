@@ -1,0 +1,19 @@
+<div *ngIf="show; else show2">
+  <div class="container"> 
+    <app-peliculas></app-peliculas> 
+  </div> 
+</div>
+
+<ng-template #show2>
+  <div class="container"> 
+    <app-footer></app-footer>
+  </div> 
+</ng-template>
+
+<div class="container">
+  <h5 id="Value_Show">
+      Valor de show es {{show}}
+  </h5>
+
+  <button class="change" (click)="show=!show"> <b> Action </b> </button>
+</div>

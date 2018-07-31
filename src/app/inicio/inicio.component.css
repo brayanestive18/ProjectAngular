@@ -1,0 +1,19 @@
+#Value_Show{
+    color: red;
+    font-size: 10px;
+}
+
+.change{
+    background: #005874;
+    color: #e6e6d4;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.change:hover{
+    background: #1c819e;
+}
+
+.change:active{
+    background: #04a3cf;
+}

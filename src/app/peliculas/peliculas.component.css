@@ -1,0 +1,32 @@
+.tabla{
+    margin: 0 auto;
+}
+
+.columnaMov{
+    background: #cdd5e0;
+    color: black;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #89a4c7;
+    width: 23%;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 1050px){
+    .columnaMov{
+        width: 46%;
+    }
+}
+
+@media(max-width: 600px){
+    .columnaMov{
+        width: 92%;
+    }
+}
