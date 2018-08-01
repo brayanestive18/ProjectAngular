@@ -13,6 +13,7 @@ import { ServicioComponent } from './servicio/servicio.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { ContactenosComponent } from './contactenos/contactenos.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: 'servicio', component: ServicioComponent },
@@ -26,7 +27,7 @@ const routes: Routes = [
   declarations: [
     AppComponent, 
     CabeceraComponent, 
-    FooterComponent, ServicioComponent, InicioComponent, PeliculasComponent, ContactenosComponent
+    FooterComponent, ServicioComponent, InicioComponent, PeliculasComponent, ContactenosComponent, NosotrosComponent
   ],
   imports: [
     BrowserModule,
