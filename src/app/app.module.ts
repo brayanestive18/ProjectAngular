@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'servicio', component: ServicioComponent },
   { path: 'inicio', component: InicioComponent },
   { path: 'contactenos', component: ContactenosComponent},
+  { path: 'nosotros', component: NosotrosComponent},
   { path: '', component: InicioComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ]
