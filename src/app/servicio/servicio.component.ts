@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicioComponent implements OnInit {
 
-  constructor() { }
+  servicios: Array<any>;
+
+  constructor() {
+    this.servicios = [
+      {nombre: 'Internet', descripcion:'Ancho de banda 10M - Fibra', precio: 130000},
+      {nombre: 'Telefonia', descripcion:'Telefonia nacional ilimitada', precio: 120000},
+      {nombre: 'Televisión Satelital', descripcion:'Full HD', precio: 100000},
+      {nombre: 'Triple Play', descripcion:'Ancho de banda 10M - TV cable - telefonia ilimitada', 
+      precio: 190000}
+    ]
+   }
 
   ngOnInit() {
   }

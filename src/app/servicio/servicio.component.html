@@ -1,6 +1,25 @@
 <div class="container">
-  <p>
-    servicio works!
-  </p>
+ 
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor = "let servicio of servicios; index as i">
+        <th scope="row"> {{i + 1}} </th>
+        <td> {{servicio.nombre}} </td>
+        <td> {{servicio.descripcion}} </td>
+        <td> {{servicio.precio}} </td>
+      </tr>
+    </tbody>
+
+  </table>
+
 </div>
 
