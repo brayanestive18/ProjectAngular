@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'equipo/:id', component: EquipoComponent},
   { path: 'nosotros', component: NosotrosComponent},
   { path: '', component: InicioComponent, pathMatch: 'full' },
-  { path: '**', redirectTo: '/', pathMatch: 'full' }
+  { path: '**', component: ErrorComponent, pathMatch: 'full' }
 ]
 
 @NgModule({
