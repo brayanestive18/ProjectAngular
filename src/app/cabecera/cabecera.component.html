@@ -2,11 +2,38 @@
 
 <div class="container" id="menu">
     <nav>
-        <button class="nav-button" id="buttonMenu" (click)="accionMenu()"> <b> Menú </b> </button>
-        <b> <a [routerLink]="['/']" class="nav_enlace ocultar"> <p class="central"> Inicio </p>  </a> </b> 
-        <b> <a [routerLink]="['/servicio']" class="nav_enlace ocultar"> <p class="central"> Servicio </p> </a> </b> 
-        <b> <a [routerLink]="['/contactenos']" class="nav_enlace ocultar"> <p class="central"> Contactenos </p> </a> </b> 
-        <b> <a [routerLink]="['/nosotros']" class="nav_enlace ocultar"> <p class="central"> Nosotros </p> </a> </b> 
-        <b> <a href="#" class="nav_enlace ocultar"> <p class="central"> Ayuda </p> </a> </b> 
+        <button class="nav-button" id="buttonMenu" (click)="accionMenu()"> 
+            <b> Menú </b>
+        </button>
+
+        <b> 
+            <a [routerLink]="['/']" class="nav_enlace ocultar" (click)="accionMenu()"> 
+                <p class="central"> Inicio </p>  
+            </a> 
+        </b> 
+
+        <b> 
+            <a [routerLink]="['/servicio']" class="nav_enlace ocultar" (click)="accionMenu()"> 
+                <p class="central"> Servicio </p> 
+            </a> 
+        </b> 
+
+        <b> 
+            <a [routerLink]="['/contactenos']" class="nav_enlace ocultar" (click)="accionMenu()"> 
+                <p class="central"> Contactenos </p> 
+            </a> 
+        </b> 
+
+        <b> 
+            <a [routerLink]="['/nosotros']" class="nav_enlace ocultar" (click)="accionMenu()"> 
+                <p class="central"> Nosotros </p> 
+            </a>
+        </b> 
+
+        <b> 
+            <a [routerLink]="['/#']" class="nav_enlace ocultar" (click)="accionMenu()"> 
+                <p class="central"> Ayuda </p> 
+            </a> 
+        </b> 
     </nav>
 </div>

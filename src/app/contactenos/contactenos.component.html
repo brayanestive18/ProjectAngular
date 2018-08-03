@@ -1,14 +1,16 @@
 <div class="container">
-  <h4>
+
+  <h4 id="titulo">
     Contactenos
   </h4>
 
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let item of conta">
+    <li class="list-group-item" *ngFor="let item of conta, index as i">
       <h6>Nombre: {{item.nombre}} </h6>
       <h6>Apellido: {{item.apellido}} </h6>
       <h6>Cargo: {{item.cargo}} </h6>
       <h6>Telefono: {{item.telefono}} </h6>
+      <a [routerLink]="['/equipo',i]"> Más Información</a>
     </li>
   </ul>
 
