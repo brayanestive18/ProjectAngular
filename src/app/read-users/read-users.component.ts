@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConnectService } from '../services/connect.service';
 
 @Component({
   selector: 'app-read-users',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReadUsersComponent implements OnInit {
 
-  constructor() { }
+  items:any;
+
+  constructor(private connection:ConnectService) { 
+    connection.getItem().subscribe(item=>{
+      this.items = item;
+      // console.log(this.items);
+    })
+    
+  }
 
   ngOnInit() {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from 'angularfire2/firestore';
-import { Observable } from 'rxjs';
+// import { AngularFirestore } from 'angularfire2/firestore';
+// import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-firebase-page',
@@ -9,10 +9,12 @@ import { Observable } from 'rxjs';
 })
 export class FirebasePageComponent implements OnInit {
 
-  items: Observable<any[]>;
-  constructor(db: AngularFirestore) {
-    this.items = db.collection('items').valueChanges();
-  }
+  // items: Observable<any[]>;
+  // constructor(db: AngularFirestore) {
+  //   this.items = db.collection('items').valueChanges();
+  // }
+
+  constructor(){}
 
   ngOnInit() {
   }
