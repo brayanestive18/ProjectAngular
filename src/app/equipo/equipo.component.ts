@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ModserverService } from './../modserver.service';
+import { ModserverService } from '../modserver.service';
 
 @Component({
   selector: 'app-equipo',

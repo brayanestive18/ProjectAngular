@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModserverService } from './../modserver.service';
+import { ModserverService } from '../modserver.service';
 
 @Component({
   selector: 'app-contactenos',
